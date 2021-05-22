@@ -1,0 +1,21 @@
+<mat-card>
+    <h2>Ingresa</h2>
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+            <mat-label>usuario</mat-label>
+            <input matInput form autocomplete="off" [formControl]="user">
+            <mat-error *ngIf="user.hasError('required')">
+               Campo incompleto
+            </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>contraseña</mat-label>
+            <input matInput type="password" [formControl]="password">
+            <mat-error *ngIf="password.hasError('required')">
+                Campo incompleto
+            </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="onSubmit()">Ingresar</button>
+    </mat-card-content>
+</mat-card>

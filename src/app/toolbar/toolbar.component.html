@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <button  mat-button  class="example-icon" aria-label="Example icon-button with menu icon" (click)="onSubmit('dashboard')">
+        <span id="titulo">Inicio</span>
+    </button>
+    
+    <span class="spacer"></span>
+    
+    <button  mat-button  (click)="onSubmit('cursos')">
+      <span>Cursos</span>
+    </button>
+
+    <button  mat-button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"  (click)="onSubmit('personas')">
+        <span>Personas</span>
+    </button>
+
+    <button  mat-button  class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"  (click)="onSubmit('roles')">
+    <span>Roles</span>
+    </button>
+
+    <button  mat-button  class="example-icon" aria-label="Example icon-button with share icon"  (click)="onSubmit('tutorias')">
+        <span>Tutorias</span>
+    </button>
+  </mat-toolbar>
