@@ -13,7 +13,7 @@ export class CursosService {
   constructor(private http: HttpClient) { }
 
   getCoursesList():Observable<courses[]>{
-    return this.http.get<courses[]>('http://localhost:8080/Courses/AllPersons');
+    return this.http.get<courses[]>('http://localhost:8080/Courses/AllCourses');
   }
 
   createCourse(newCourse:courses){
